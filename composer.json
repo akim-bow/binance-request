@@ -1,0 +1,15 @@
+{
+    "name": "akim-bow/binance-request",
+    "description": "DNS protocol implementation written in pure PHP",
+    "license": "MIT",
+    "keywords": ["request"],
+    "autoload": {
+        "psr-4": {
+            "BinanceRequst\\": "src/"
+        }
+    },
+    "require": {
+      "ext-json": "*",
+      "guzzlehttp/guzzle": "^7.3"
+    }
+}
