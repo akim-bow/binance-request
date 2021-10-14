@@ -5,7 +5,7 @@
     "keywords": ["request"],
     "autoload": {
         "psr-4": {
-            "BinanceRequst\\": "src/"
+            "BinanceRequest\\": "src/"
         }
     },
     "require": {
