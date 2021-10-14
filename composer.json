@@ -9,7 +9,9 @@
         }
     },
     "require": {
-      "ext-json": "*",
-      "guzzlehttp/guzzle": "^7.3"
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "ext-curl":  "*",
+        "guzzlehttp/guzzle": "^7.3"
     }
 }
