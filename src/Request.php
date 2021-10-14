@@ -40,7 +40,10 @@ class Request
     ): PromiseInterface {
         $request = $this->getRequest($method, $url, $options);
 
-        return $this->httpClient->sendAsync($request);
+        return $this->httpClient->sendAsync($request)
+            ->then(function(\GuzzleHttp\Psr7\Response $response) {
+                return json_decode($response->getBody()->getContents(), true);
+            });
     }
 
     private function getRequest(string $method, string $url, array $options): \GuzzleHttp\Psr7\Request {
